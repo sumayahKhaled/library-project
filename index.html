@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="madia.css" />
+    <title>library</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style></style>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="" />
+      </div>
+      <nav class="nav">
+        <a href="#main">الرئيسية</a>
+        <a href="#new-books">الكتب</a>
+        <a href="#accessories">إكسسورارات</a>
+        <a href="#Price-offers">عروض </a>
+      </nav>
+      <div class="icons">
+        <div id="icon-menu"><i class="bx bx-menu"></i></div>
+        <div id="icon-search"><i class="bx bx-search-alt-2"></i></div>
+        <div id="icon-shopping"><i class="bx bxs-cart-alt"></i></div>
+        <div id="icon-user"><i class="bx bxs-user"></i></div>
+      </div>
+
+      <!-- form  search -->
+      <form action="" class="search-form">
+        <input
+          type="text"
+          placeholder="ابحث عن الكتب"
+          class="search"
+          id="search"
+        />
+        <label for="search"><i class="bx bx-search-alt-2"></i></label>
+      </form>
+
+      <!-- form stor -->
+      <div class="shopping">
+        <!-- order1 -->
+        <div class="order">
+          <img style="width: 70px" src="img/1.jpg" alt="" />
+          <div class="content">
+            <h3>مفسدات القلوب</h3>
+            <span class="price">$4.99</span>
+            <span class="quantiy">الكمية : 1</span>
+          </div>
+          <i class="bx bxs-trash-alt delete"></i>
+        </div>
+
+        <!-- order2 -->
+        <div class="order">
+          <img style="width: 70px" src="img/2.jpg" alt="" />
+          <div class="content">
+            <h3>الروحاني الأخير</h3>
+            <span class="price">$4.99</span>
+            <span class="quantiy">الكمية : 1</span>
+          </div>
+          <i class="bx bxs-trash-alt delete"></i>
+        </div>
+
+        <!-- order3 -->
+        <div class="order">
+          <img style="width: 70px" src="img/3.jpg" alt="" />
+          <div class="content">
+            <h3>الموت السعيد</h3>
+            <span class="price">$4.99</span>
+            <span class="quantiy">الكمية : 1</span>
+          </div>
+          <i class="bx bxs-trash-alt delete"></i>
+        </div>
+        <div class="salary">
+          <h1>الاجمالي :$12.99</h1>
+          <button>الدفع</button>
+        </div>
+      </div>
+
+      <!--start user -->
+
+      <div class="user">
+        <h3>تسجيل الدخول</h3>
+        <input type="email" placeholder="ادخل الإيميل" />
+        <input type="password" placeholder="ادخل الرمز" />
+        <h6>
+          لا يوجد لديك حساب <span><a href="#">سجل الأن</a></span>
+        </h6>
+        <button>الدخول</button>
+      </div>
+    </header>
+
+    <section class="main" id="main">
+      <h1>مكتبة <span>أبرار</span></h1>
+      <p>مكتبة لبيع الكتب مع خدمة التوصيل لجميع المحافظات</p>
+      <button>أشتري الان</button>
+    </section>
+
+    <section class="new-books" id="new-books">
+      <h1>أحدث الاصدارات</h1>
+      <div class="cards">
+        <!-- start card-->
+        <div class="card">
+          <div class="img"><img src="img/1.jpg" alt="" /></div>
+          <div class="content">
+            <h2>مفسدات القلوب</h2>
+            <p>محمد صالح</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/2.jpg" alt="" /></div>
+          <div class="content">
+            <h2>الروحاني الأخير</h2>
+            <p>مهدي الموسمي</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/3.jpg" alt="" /></div>
+          <div class="content">
+            <h2>الموت السعيد</h2>
+            <p>البير كامو</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/4.jpg" alt="" /></div>
+          <div class="content">
+            <h2>الهشاشه النفسية</h2>
+            <p>هاربيت</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/5.jpg" alt="" /></div>
+          <div class="content">
+            <h2>سهــاد</h2>
+            <p>كويلي</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/6.jpg" alt="" /></div>
+          <div class="content">
+            <h2>عوائق النهضة الاسلامية</h2>
+            <p>علي عزت</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/7.jpg" alt="" /></div>
+          <div class="content">
+            <h2>ثلاثية غرناطة</h2>
+            <p>رضوى عاشور</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/8.jpg" alt="" /></div>
+          <div class="content">
+            <h2>دقات الشامو</h2>
+            <p>عمرو عبد الحميد</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/9.jpg" alt="" /></div>
+          <div class="content">
+            <h2>العادات الذرية</h2>
+            <p>جميس كلير</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/10.jpg" alt="" /></div>
+          <div class="content">
+            <h2>حب كاتبة</h2>
+            <p>جانيس والد</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+        <!--  -->
+        <!-- end card -->
+      </div>
+
+      <a href="allCard.html">عرض كل الكتب</a>
+    </section>
+
+    <!-- best-seller -->
+
+    <section class="best-seller">
+      <h1>الاكثر مبيعاً</h1>
+      <div class="cards">
+        <!-- start card -->
+        <div class="card">
+          <div class="img"><img src="img/11.jpg" alt="" /></div>
+          <div class="content">
+            <h2>فن اللأمبالاة</h2>
+            <p>مارك مانسون</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/12.jpg" alt="" /></div>
+          <div class="content">
+            <h2>انني اتعفن رعباً</h2>
+            <p>مريم الحيسي</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/13.jpg" alt="" /></div>
+          <div class="content">
+            <h2>أصبحت انت</h2>
+            <p>احلام</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/14.jpg" alt="" /></div>
+          <div class="content">
+            <h2>اترك العلم خلفك</h2>
+            <p>رمان عَلم</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/15.jpg" alt="" /></div>
+          <div class="content">
+            <h2>نعمة الألم</h2>
+            <p>نشوى صلاح</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <!-- end card -->
+      </div>
+
+      <a href="allCard.html">عرض كل الكتب</a>
+    </section>
+
+    <!-- Price-offers -->
+    <section class="Price-offers" id="Price-offers">
+      <h1>عروض</h1>
+      <div class="cards">
+        <!-- start card -->
+        <div class="card">
+          <div class="img"><img src="img/16.jpg" alt="" /></div>
+          <div class="content">
+            <h2>فكر مجدداً</h2>
+            <p>آدم غرانت</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <span class="price">$30</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card">
+          <div class="img"><img src="img/17.jpg" alt="" /></div>
+          <div class="content">
+            <h2>الهـــامس</h2>
+            <p>أليكس نورث</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <span class="price">$30</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/18.jpg" alt="" /></div>
+          <div class="content">
+            <h2>التأثير المركب</h2>
+            <p>دارين هاردي</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <span class="price">$30</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/19.jpg" alt="" /></div>
+          <div class="content">
+            <h2>لعلها تستجاب</h2>
+            <p>مشعل حمد</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <span class="price">$30</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/20.jpg" alt="" /></div>
+          <div class="content">
+            <h2>مميز بالأصفر</h2>
+            <p>روتشيل بُنينجتون</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <span class="price">$30</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+        <!--  -->
+        <!--  -->
+
+        <!--  -->
+        <!-- end card -->
+      </div>
+      <a href="allCard.html">عرض كل الكتب</a>
+    </section>
+
+    <section class="accessories" id="accessories">
+      <h1>الإكسسوارات</h1>
+      <div class="cards">
+        <!-- start card -->
+        <div class="card">
+          <div class="img"><img src="img/1-1.jpg" alt="" /></div>
+          <div class="content">
+            <h2>لمبة واي فاي</h2>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/2-2.jpg" alt="" /></div>
+          <div class="content">
+            <h2>مسند مع مصباح</h2>
+            <p>مريم الحيسي</p>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/3-3.jpg" alt="" /></div>
+          <div class="content">
+            <h2>مغناطيس</h2>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/4-4.jpg" alt="" /></div>
+          <div class="content">
+            <h2>ضوء لقراءة الكتب</h2>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="img/5-5.jpg" alt="" /></div>
+          <div class="content">
+            <h2>مسند كتب</h2>
+          </div>
+          <div class="footer">
+            <span>$20</span>
+            <i class="bx bxs-cart-alt"></i>
+          </div>
+        </div>
+
+        <!-- end card -->
+      </div>
+    </section>
+    <!-- نهاية آخر سكشن -->
+
+    <footer class="main-footer">
+      <div class="footer-links-container">
+        <a href="#main">الرئيسية</a>
+        <a href="#new-books">الكتب</a>
+        <a href="#accessories">الإكسسوارات</a>
+        <a href="#Price-offers">العروض</a>
+      </div>
+
+      <div class="logo">
+        <img src="logo.png" alt="شعار المكتبة" style="width: 70px" />
+        <p>مكتبة لبيع الكتب مع خدمة التوصيل لجميع المحافظات</p>
+      </div>
+
+      <div class="contact">
+        <p>
+          <a href="mailto:info@abrarlibrary.com"
+            ><i class="bx bx-envelope"></i
+          ></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-whatsapp"></i></a>
+        </p>
+
+        <div class="footer-contact">
+          <p>جميع الحقوق محفوظة &copy; 2025</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
+</html>

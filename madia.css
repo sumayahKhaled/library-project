@@ -1,0 +1,252 @@
+@media (max-width: 991px) {
+  section.main {
+    padding-top: 140px;
+  }
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 2rem;
+    /* background-color: aqua; */
+    position: fixed;
+    top: 0;
+  }
+
+  header .search-form {
+    width: 80%;
+    height: 50%;
+  }
+
+  header form input {
+    font-size: 2rem;
+  }
+
+  header form label i {
+    font-size: 3rem;
+  }
+
+  #icon-menu {
+    display: inline-block;
+  }
+
+  /* nav */
+  header nav {
+    position: absolute;
+    top: 110%;
+    left: -100%;
+    box-shadow: var(--shadow);
+    width: 30rem;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header nav a {
+    font-size: 2rem;
+    margin: 1rem 2.5rem;
+    padding: 10px;
+  }
+
+  /* shopping */
+  header .shopping {
+    height: 80rem;
+    width: 60%;
+    gap: 10px;
+  }
+
+  .shopping .order {
+    padding: 20px;
+  }
+
+  .order .content h3,
+  .order .content .quantiy,
+  .order .content .price,
+  .order .delete,
+  .salary h1,
+  .salary button {
+    font-size: 3rem;
+  }
+  /* main */
+  .main h1 {
+    font-size: 50px;
+    margin: 10% 0 1% 0;
+  }
+
+  /*cards  */
+
+  .new-books .card {
+    width: 180px;
+    height: 330px;
+  }
+
+  .card .content {
+    text-align: center;
+    margin: 10px 0 30px 0;
+    font-size: 12px;
+  }
+
+  .card .content h2 {
+    margin-bottom: 10px;
+  }
+  .new-books h1 {
+    font-size: 25px;
+  }
+  .best-seller h1 {
+    font-size: 25px;
+  }
+  .Price-offers h1 {
+    font-size: 25px;
+  }
+  .allCard .card .content h2 {
+    font-size: 2rem;
+  }
+}
+
+/*  */
+@media (max-width: 768px) {
+  section.main {
+    padding-top: 160px;
+  }
+  /* search */
+  /* header {
+    background-color: blueviolet;
+  } */
+
+  header .search-form {
+    width: 80%;
+    height: 50%;
+  }
+
+  header form input {
+    font-size: 2rem;
+  }
+
+  header form label i {
+    font-size: 3rem;
+  }
+
+  #icon-menu {
+    display: inline-block;
+  }
+
+  /* nav */
+  header nav {
+    position: absolute;
+    top: 110%;
+    left: -100%;
+    box-shadow: var(--shadow);
+    width: 30rem;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header nav a {
+    font-size: 2rem;
+    margin: 1rem 2.5rem;
+    padding: 10px--;
+  }
+
+  /* shopping */
+  header .shopping {
+    height: 80rem;
+    width: 60%;
+    gap: 10px;
+  }
+
+  .shopping .order {
+    padding: 20px;
+  }
+
+  .order .content h3 {
+    font-size: 3rem;
+    color: var(--text);
+  }
+
+  .order .content .price {
+    font-size: 2rem;
+    color: var(--c-second-icon);
+    margin: 10px;
+  }
+
+  .order .content .quantiy {
+    font-size: 3rem;
+    color: var(--c-second-icon);
+  }
+
+  .order .delete {
+    font-size: 3rem;
+    color: var(--c-second-icon);
+    cursor: pointer;
+  }
+
+  .order .delete:hover {
+    color: var(--hover);
+  }
+
+  .salary h1 {
+    font-size: 3rem;
+    color: var(--text);
+  }
+
+  .salary button {
+    font-size: 3rem;
+  }
+  /* main */
+  .main h1 {
+    font-size: 40px;
+    margin: 10% 0 1% 0;
+  }
+
+  .main h1 span {
+    color: rgb(222, 147, 7);
+    font-size: 40px;
+  }
+  .main p {
+    text-align: center;
+    font-size: 15px;
+  }
+  .main button {
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 10px 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bold;
+  }
+  .allCard {
+    gap: 15px;
+    padding: 20px 0;
+  }
+  .allCard .card {
+    width: 140px;
+    height: 270px;
+  }
+  .allCard .card .img {
+    height: 120px;
+  }
+  .allCard .card .content h2 {
+    font-size: 2rem;
+  }
+  .allCard .card .footer {
+    font-size: 15px;
+    gap: 20px;
+    padding: 7px;
+  }
+}
+
+/*  */
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,784 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: tajawal, sans-serif;
+}
+
+:root {
+  --text: black;
+  --a-back: black;
+  --co-header: rgb(255, 255, 255);
+  --hover: rgb(222, 147, 7);
+  --co-hover-div: white;
+  --shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+  --c-second: rgb(129, 129, 129);
+  --c-second-icon: rgb(86, 86, 86);
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+#icon-menu {
+  display: none;
+}
+
+/* start  header */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: var(--co-header);
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+}
+
+.icons h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+.logo img {
+  height: 80px;
+}
+nav {
+  display: flex;
+  gap: 20px;
+}
+nav.active {
+  left: 2rem;
+  transition: 0.4s linear;
+}
+a {
+  color: var(--a-back);
+  font-weight: bold;
+  font-size: 20px;
+}
+a:hover {
+  color: var(--hover);
+}
+.icons {
+  display: flex;
+  gap: 5px;
+  font-size: 20px;
+}
+.icons div {
+  background-color: rgb(232, 232, 232);
+  padding: 6px;
+}
+.icons div:hover {
+  color: var(--co-hover-div);
+  background-color: var(--hover);
+}
+
+/*  start search */
+header form {
+  position: absolute;
+  top: 110%;
+  left: -1000%;
+  /* Right:2rem */
+  height: 4rem;
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+header form.active {
+  left: 2rem;
+  transition: 0.4s linear;
+}
+header form input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  text-transform: none;
+}
+header form label i {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+
+  transform: translateY(-50%);
+  font-size: 2.2rem;
+  padding-right: 1.5rem;
+  color: var(--text);
+  cursor: pointer;
+}
+header form label i:hover {
+  color: var(--hover);
+}
+
+/* start shoping  */
+header .shopping {
+  position: absolute;
+  top: 110%;
+  left: -100%;
+  /* Right:2rem */
+  height: 500px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.shopping.active {
+  left: 2rem;
+  transition: 0.4s linear;
+}
+.shopping .order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+}
+.order .content {
+  text-align: center;
+}
+.order .content h3 {
+  font-size: 1rem;
+  color: var(--text);
+}
+.order .content .price {
+  font-size: 1rem;
+  color: var(--c-second-icon);
+  margin: 10px;
+}
+.order .content .quantiy {
+  font-size: 1.2rem;
+  color: var(--c-second-icon);
+}
+.order .delete {
+  font-size: 1.5rem;
+  color: var(--c-second-icon);
+  cursor: pointer;
+}
+.order .delete:hover {
+  color: var(--hover);
+}
+.salary {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: 100%;
+}
+.salary h1 {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+.salary button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  background-color: white;
+  color: var(--text);
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid var(--a-back);
+  box-shadow: var(--shadow);
+  width: 100%;
+}
+.salary button:hover {
+  background-color: var(--hover);
+  color: var(--co-header);
+}
+/* end shop */
+
+/* start user */
+header .user {
+  position: absolute;
+  top: 110%;
+  left: -1000%;
+  height: 240px;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+.user.active {
+  left: 2rem;
+  transition: 0.4s linear;
+}
+
+.user input {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  background-color: rgb(234, 233, 233);
+  padding: 0 20px;
+}
+
+.user h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.user h6 {
+  font-size: 13px;
+  margin-top: 10px;
+}
+.user h6 span a {
+  font-size: 13px;
+  color: var(--hover);
+  text-decoration: none;
+}
+.user button {
+  margin-top: 10px;
+  width: 50%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: white;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid var(--text);
+}
+.user button:hover {
+  background-color: var(--hover);
+  color: white;
+}
+
+/*start main */
+section {
+  padding: 2rem 9%;
+}
+section.main {
+  padding-top: 120px; /* أو حسب ارتفاع الهيدر عندك */
+}
+
+.main {
+  background: url(img/bac.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.main h1 {
+  font-size: 60px;
+  margin: 10% 0 1% 0;
+}
+.main h1 span {
+  color: rgb(222, 147, 7);
+  font-size: 60px;
+}
+.main p {
+  text-align: center;
+  font-size: 20px;
+}
+.main button {
+  font-size: 20px;
+  margin-top: 15px;
+  padding: 10px 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0, 0.3);
+  color: white;
+  font-weight: bold;
+}
+.main button:hover {
+  background-color: rgb(222, 147, 7);
+  color: white;
+  border: 2px solid rgb(222, 147, 7);
+}
+
+/* قواعد عامة للكروت */
+.card .content {
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.card .content h2 {
+  margin-bottom: 10px;
+}
+
+.card .footer {
+  position: absolute;
+  background-color: rgb(224, 224, 224);
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* اجعلها 40px أو حسب رغبتك */
+  font-size: 19px;
+}
+
+.card .footer i {
+  padding-left: 0;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.card .footer i:hover {
+  color: var(--hover);
+}
+
+/* start new-books */
+
+.new-books .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.new-books .card {
+  position: relative;
+  border-radius: 5px;
+  width: 180px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.new-books .card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.new-books .card .img {
+  width: 100%;
+  height: 200px;
+  /* background-color: aquamarine; */
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.new-books a {
+  background-color: var(--hover);
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 85%;
+  text-align: center;
+}
+
+.new-books {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  place-items: center;
+  text-align: center;
+}
+
+.new-books h1 {
+  position: relative;
+  display: inline-block;
+}
+.new-books h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 60px; /* تقدر تغيريه */
+  background-color: #ff6600;
+  border-radius: 4px;
+}
+
+/* start best-seller */
+.best-seller {
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+  place-items: center;
+  text-align: center;
+}
+
+.best-seller .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.best-seller .card {
+  position: relative;
+  border-radius: 5px;
+  width: 180px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.best-seller .card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.best-seller .card .img {
+  width: 100%;
+  height: 200px;
+  /* background-color: aquamarine; */
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.best-seller a {
+  background-color: var(--hover);
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 85%;
+}
+
+.best-seller h1 {
+  position: relative;
+  display: inline-block;
+}
+.best-seller h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 60px; /* تقدر تغيريه */
+  background-color: #ff6600;
+  border-radius: 4px;
+}
+
+/* start Price-offers */
+.Price-offers {
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+  place-items: center;
+  text-align: center;
+}
+
+.Price-offers .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.Price-offers .card {
+  position: relative;
+  border-radius: 5px;
+  width: 180px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Price-offers .card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Price-offers .card .img {
+  width: 100%;
+  height: 200px;
+  /* background-color: aquamarine; */
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.Price-offers .footer .price::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  right: 80px;
+  left: 45%;
+  transform: rotate(-40deg);
+  height: 5px;
+  width: 30px; /* تقدر تغيريه */
+  background-color: #ff6600;
+}
+.Price-offers a {
+  background-color: var(--hover);
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 85%;
+}
+
+.Price-offers h1 {
+  position: relative;
+  display: inline-block;
+}
+.Price-offers h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 60px; /* تقدر تغيريه */
+  background-color: #ff6600;
+  border-radius: 4px;
+}
+.Price-offers .card .footer {
+  position: absolute;
+  background-color: var(--co-second);
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-size: 19px;
+}
+/*  stat accessories*/
+
+.accessories {
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+  place-items: center;
+  text-align: center;
+}
+
+.accessories .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.accessories .card {
+  position: relative;
+  border-radius: 5px;
+  width: 180px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accessories .card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.accessories .card .img {
+  width: 100%;
+  height: 200px;
+  /* background-color: aquamarine; */
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.accessories.footer .price::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  right: 80px;
+  left: 45%;
+  transform: rotate(-40deg);
+  height: 5px;
+  width: 30px; /* تقدر تغيريه */
+  background-color: #ff6600;
+}
+.accessories a {
+  background-color: var(--hover);
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 85%;
+}
+
+.accessories h1 {
+  position: relative;
+  display: inline-block;
+}
+.accessories h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 60px; /* تقدر تغيريه */
+  background-color: #ff6600;
+  border-radius: 4px;
+}
+/* allCards */
+
+.allCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+  min-height: 100vh;
+  background: #fafafa;
+}
+
+.allCard .card {
+  position: relative;
+  border-radius: 5px;
+  width: 180px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+  background: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.allCard .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.allCard .card .img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.allCard .card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.allCard .card .content {
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.allCard .card .content h2 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.allCard .card .footer {
+  position: absolute;
+  background-color: rgb(224, 224, 224);
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px; /* اجعلها 40px أو حسب رغبتك */
+  font-size: 19px;
+}
+
+.allCard .card .footer i {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.allCard .card .footer i:hover {
+  color: var(--hover);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+}
+
+/* start main-footer */
+.main-footer {
+  background: #222;
+  color: #fff;
+  padding: 40px;
+  margin-top: 40px;
+
+  font-size: 1.1rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact a {
+  color: white;
+}
+
+.contact a:hover {
+  color: var(--hover);
+}
+.footer-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.footer-links-container a {
+  color: white;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+.footer-links-container a:hover {
+  color: var(--hover);
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+}
